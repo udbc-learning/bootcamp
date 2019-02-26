@@ -65,9 +65,9 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: admin123
   jenkins:
-    image: schoolofdevops/jenkins
+    image: jenkins/jenkins:jdk11
     ports:
-      - "8080:8080"
+      - "7070:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
